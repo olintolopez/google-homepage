@@ -1,0 +1,1 @@
+In this exercise, I have carried out the second activity of the Odin project. It is an interesting activity
