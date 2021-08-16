@@ -15,7 +15,6 @@
   }
   
   html {
-    /* footer support */
     position: relative;
     min-height: 100%;
   }
@@ -23,7 +22,6 @@
   body {
     font-family: arial, sans-serif;
     line-height: 1.6;
-    /* footer support */
     margin-bottom: 100px;
   }
   
@@ -93,12 +91,13 @@
     margin-right: 12px;
   }
   
-  .button-apps {
+  .google-apps {
     width: 32px;
     height: 32px;
     background-color: transparent;
-    background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    background-image: url("../../assets/images/gsprite.png");
     background-position: -131px -37px;
+    background-repeat: no-repeat;
     opacity: 0.6;
   }
   
@@ -112,7 +111,7 @@
 
   .gsprite{
      
-     background-image: url("assets/images/gsprite.png");
+     background-image: url("../../assets/images/gsprite.png");
      background-color: transparent;
      background-repeat: no-repeat; 
   }
@@ -125,7 +124,9 @@
     border-radius: 50%;
   }
   
-  /* Currently using user icon */
+  /** 
+    STYLES FOR CURRENTLY USER LOGIN  
+  **/
   
   .button-sign-in {
     padding: 7px 10px;
@@ -141,7 +142,7 @@
     opacity: 1;
   }
   
-  /* MAIN */
+  /* STYLES FOR MAIN SECTION  */
   
   .main {
     display: flex;
@@ -159,6 +160,11 @@
     margin-bottom: 26px;
   }
   
+
+  /**
+    STYLES FOR INPUT FIELD SEATCH
+  **/
+
   .searchbar {
     display: flex;
     align-items: center;
@@ -218,6 +224,49 @@
     border-color: blue;
   }
   
+  /** 
+     LINK GOOGLE OFFERED IN SPANISH
+  **/
+  .google__latinoamerica{
+    color: #3c4043;
+    display: inline-block;
+    line-height: 28px;
+    font-size: 15px;
+  }
+
+  .google__latinoamerica a{
+      font-size: 13px;
+      color: rgb(93, 91, 243);
+  }
+
+  .google__latinoamerica a:hover{
+    color: darkblue;
+  }
+
+
+  /** 
+     VENEZUELA 
+  **/
+  .venezuela{
+      position: absolute;
+      bottom: 45px;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--footer-background);
+      color: var(--footer-font);
+      font-size: 14px;
+  }
+
+  .venezuela span{
+      position: relative;
+      left: 2%;
+  }
   /* FOOTER */
   
   .footer {
@@ -264,11 +313,26 @@
       flex-direction: column;
     }
   
-    .footer-link {
+    .fo                                                                                             
+    oter-link {
       padding: 8px;
     }
   
     .right-section {
       margin-right: 0;
     }
+
+                                                                                                            
+    
+    
+    
+    .venezuela{
+        bottom: 80px;
+    }
+    .venezuela span{
+        position: relative;
+        left: 50%;
+    }
   }
+
+  
